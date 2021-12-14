@@ -1,0 +1,9 @@
+int i=0;
+for(i=0; i < Len/0xff; i++)
+{
+    printf("%x %d", buffer_addr+(i*0xff), 0xff);
+}
+if((i*0xff)!=Len)
+{
+    printf("%x %d", buffer_addr+(i*0xff), Len-(i*0xff));
+}
